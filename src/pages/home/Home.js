@@ -5,8 +5,13 @@ import {MainContainer, ImgDiv, HomeImg} from './style';
 import RecipeCard from './RecipeCard';
 import homeSvg from '../../assets/home.svg';
 
-const APP_ID = '7902fbd5';
-const APP_KEY = 'be1dc39f9e64be8ede92bfa2b81676eb';
+/* const APP_ID = '7902fbd5';
+const APP_KEY = 'be1dc39f9e64be8ede92bfa2b81676eb'; */
+
+const APP_ID = process.env.REACT_APP_APP_ID;
+const APP_KEY = process.env.REACT_APP_APP_KEY;
+
+
 const mealTypes = ['Breakfast', 'Lunch', 'Dinner', 'Snack', 'Teatime'];
 
 const Home = () => {
